@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MNELECTRO 2.0 — Tecnología que conecta (demo)</title>
+<meta name="description" content="MNELECTRO: celulares, audio, wearables y accesorios. Prototipo visual de tienda online premium.">
+<meta name="theme-color" content="#0B0B0F">
+<meta property="og:title" content="MNELECTRO — Tecnología que conecta">
+<meta property="og:description" content="Prototipo de tienda online premium Tech Black.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B0F'/%3E%3Ctext x='32' y='43' font-size='30' font-weight='800' text-anchor='middle' fill='%233382F6' font-family='sans-serif'%3EMN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"MNELECTRO","description":"Tecnología que conecta (sitio de demostración)."}</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="announce">Sitio de demostración · Productos, precios y textos de ejemplo pendientes de confirmación</div>
+
+<header class="header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="MNELECTRO, inicio"><b>M<i>N</i></b><span>MN<em>ELECTRO</em></span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#categorias">Categorías</a><a href="#catalogo">Catálogo</a><a href="#ofertas">Ofertas</a><a href="#marca">Marca</a><a href="#contacto">Contacto</a>
+    </nav>
+    <div class="actions">
+      <button class="ib" id="searchBtn" aria-label="Buscar productos" aria-expanded="false" aria-controls="searchPanel"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="ib" id="favBtn" aria-label="Ver favoritos"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.500-7 10-7 10z"/></svg><b class="badge" id="favCount">0</b></button>
+      <button class="ib" id="cartBtn" aria-label="Abrir carrito"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.200 11.200a2 2 0 0 0 2 1.600h8.500a2 2 0 0 0 1.900-1.400L21 8H6"/><circle cx="9.500" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><b class="badge" id="cartCount">0</b></button>
+      <button class="ib menu" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileNav"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div class="search" id="searchPanel" hidden><div class="wrap"><label class="sr" for="searchInput">Buscar</label><input id="searchInput" type="search" placeholder="Buscar por nombre o categoría" autocomplete="off"><button class="link" id="searchClose">Cerrar</button></div></div>
+  <nav class="mnav" id="mobileNav" aria-label="Móvil" hidden><a href="#categorias">Categorías</a><a href="#catalogo">Catálogo</a><a href="#ofertas">Ofertas</a><a href="#marca">Marca</a><a href="#contacto">Contacto</a></nav>
+</header>
+
+<main id="main">
+<section class="hero wrap" aria-labelledby="h1">
+  <div class="hero-copy">
+    <p class="kicker in" style="--d:0">Colección demo 2026</p>
+    <h1 id="h1"><span class="in" style="--d:1">La tecnología</span><span class="in" style="--d:2">que <em>te mueve.</em></span></h1>
+    <p class="lead in" style="--d:3">Celulares, audio y wearables elegidos por diseño y utilidad. Una selección pensada para el día a día.</p>
+    <div class="cta in" style="--d:4"><a class="btn primary" href="#catalogo">Ver catálogo</a><a class="btn ghost" href="#categorias">Explorar categorías</a></div>
+  </div>
+  <figure class="hero-fig in" style="--d:2">
+    <div class="ring" data-parallax="0.04"></div>
+    <img class="hero-img" data-parallax="-0.06" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=75" srcset="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=1000&q=75 1000w" sizes="(max-width:800px) 92vw, 520px" width="520" height="560" alt="Smartphone de diseño premium (imagen de ejemplo)" fetchpriority="high">
+    <figcaption>Imagen de ejemplo · reemplazar por foto de producto real</figcaption>
+  </figure>
+  <a class="scroll-cue" href="#categorias" aria-label="Desplazarse a categorías"><span></span>Desliza</a>
+</section>
+
+<section class="sec wrap" id="categorias" aria-labelledby="h-cat">
+  <header class="sh reveal"><h2 id="h-cat">Cuatro formas de conectarte</h2><a class="link" href="#catalogo">Ver todo el catálogo</a></header>
+  <div class="cats" id="cats"></div>
+</section>
+
+<section class="sec wrap" id="catalogo" aria-labelledby="h-cat2">
+  <header class="sh reveal"><div><h2 id="h-cat2">Catálogo</h2><p class="muted">Catálogo de demostración: nombres y precios de ejemplo.</p></div></header>
+  <div class="tools reveal">
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+    <div class="selects">
+      <label>Precio<select id="priceSel"><option value="all">Todos</option><option value="lt40">Hasta $40.000</option><option value="mid">$40.000 a $60.000</option><option value="gt60">Más de $60.000</option></select></label>
+      <label>Ordenar<select id="sortSel"><option value="feat">Destacados</option><option value="asc">Precio: menor a mayor</option><option value="desc">Precio: mayor a menor</option><option value="az">Nombre A–Z</option></select></label>
+    </div>
+  </div>
+  <p class="count" id="resultCount" role="status" aria-live="polite"></p>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="sec wrap" aria-labelledby="h-best">
+  <header class="sh reveal"><div><h2 id="h-best">Más vendidos</h2><p class="muted"><span class="demo">Demo</span> Selección de ejemplo hasta contar con datos reales de ventas.</p></div></header>
+  <div class="grid grid-3" id="bestGrid"></div>
+</section>
+
+<section class="brand-band" id="marca" aria-labelledby="h-brand">
+  <div class="wrap brand-in">
+    <div class="reveal"><h2 id="h-brand">La diferencia está en los detalles.</h2><p class="lead">Una selección pensada para quienes valoran el diseño, la utilidad y las nuevas formas de conectarse.</p><a class="btn light" href="#catalogo">Conocer la selección</a></div>
+    <div class="brand-media reveal"><img data-parallax="0.05" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1000&q=75" width="640" height="520" alt="Dispositivos tecnológicos sobre un escritorio (imagen de ejemplo)"></div>
+  </div>
+</section>
+
+<section class="sec wrap" id="ofertas" aria-labelledby="h-off">
+  <div class="offer reveal">
+    <div><span class="demo">Pendiente</span><h2 id="h-off">Ofertas especiales</h2><p class="lead">Este espacio mostrará las promociones reales de MNELECTRO. Todavía no hay descuentos cargados: el propietario define condiciones y vigencia.</p><a class="btn primary" href="#contacto">Avisarme de novedades</a></div>
+    <ul class="offer-slots" aria-label="Espacios de promociones"><li>Promoción 1<small>Sin definir</small></li><li>Promoción 2<small>Sin definir</small></li><li>Promoción 3<small>Sin definir</small></li></ul>
+  </div>
+</section>
+
+<section class="sec wrap" aria-labelledby="h-new">
+  <header class="sh reveal"><div><h2 id="h-new">Colecciones y novedades</h2><p class="muted"><span class="demo">Demo</span> Etiquetas “Nuevo” de ejemplo.</p></div></header>
+  <div class="grid grid-3" id="newGrid"></div>
+</section>
+
+<section class="sec wrap" aria-labelledby="h-ben">
+  <header class="sh reveal"><h2 id="h-ben">Comprar con tranquilidad</h2></header>
+  <ul class="ben">
+    <li class="reveal"><b>Envíos</b><p>Cobertura y tiempos a confirmar por la tienda.</p></li>
+    <li class="reveal"><b>Compra segura</b><p>Acompañamiento durante todo el proceso.</p></li>
+    <li class="reveal"><b>Atención cercana</b><p>Un equipo para resolver tus dudas.</p></li>
+    <li class="reveal"><b>Medios de pago</b><p>Opciones disponibles a confirmar.</p></li>
+  </ul>
+</section>
+
+<section class="sec wrap" aria-labelledby="h-rev">
+  <header class="sh reveal"><div><h2 id="h-rev">Reseñas verificadas</h2><p class="muted"><span class="demo">Pendiente</span> Se publicarán únicamente testimonios reales de clientes.</p></div></header>
+  <div class="revs"><div class="rev reveal"><i aria-hidden="true">★★★★★</i><p>Espacio reservado para una reseña real.</p></div><div class="rev reveal"><i aria-hidden="true">★★★★★</i><p>Espacio reservado para una reseña real.</p></div><div class="rev reveal"><i aria-hidden="true">★★★★★</i><p>Espacio reservado para una reseña real.</p></div></div>
+</section>
+
+<section class="sec wrap news reveal" id="contacto" aria-labelledby="h-news">
+  <div><h2 id="h-news">Novedades, directo a vos.</h2><p class="lead">Déjanos tu correo para recibir lanzamientos.</p></div>
+  <form id="newsForm" novalidate><label for="email">Correo electrónico</label><div class="row"><input id="email" type="email" placeholder="nombre@correo.com" autocomplete="off" aria-describedby="newsMsg"><button class="btn primary" type="submit">Suscribirme</button></div><small id="newsMsg" role="status">Demo: el correo no se envía ni se guarda.</small></form>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap fgrid">
+  <div><a class="brand" href="#top"><b>M<i>N</i></b><span>MN<em>ELECTRO</em></span></a><p class="muted">Tecnología que conecta.</p></div>
+  <div><strong>Explorar</strong><a href="#categorias">Categorías</a><a href="#catalogo">Catálogo</a><a href="#ofertas">Ofertas</a></div>
+  <div><strong>Ayuda</strong><a href="#contacto">Contacto</a><span class="muted">Envíos y garantías: a confirmar</span></div>
+  <div><strong>Redes</strong><span class="muted">Enlaces a confirmar</span></div>
+</div><div class="wrap fbot"><span>© 2026 MNELECTRO. Prototipo de demostración.</span><button class="link" id="clearDemo">Borrar datos locales de la demo</button></div></footer>
+
+<button class="totop" id="toTop" aria-label="Volver arriba" hidden><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+  <header><h3 id="cartTitle">Tu carrito</h3><button class="ib" data-close aria-label="Cerrar carrito">✕</button></header>
+  <div class="cart-items" id="cartItems"></div>
+  <footer><div class="sub"><span>Subtotal estimado</span><strong id="subtotal">$0</strong></div><small>Demo: sin pagos reales. Precios y stock a confirmar.</small><button class="btn primary full" id="checkout">Continuar (demo)</button><button class="link" id="clearCart">Vaciar carrito</button></footer>
+</aside>
+<div class="modal" id="quick" role="dialog" aria-modal="true" aria-labelledby="qTitle" hidden>
+  <div class="modal-box"><button class="ib x" data-close aria-label="Cerrar vista rápida">✕</button><img id="qImg" alt="" width="480" height="480"><div class="qd"><p class="kicker" id="qCat"></p><h2 id="qTitle"></h2><p class="muted">Diseño y tecnología para acompañarte todos los días. Descripción real pendiente.</p><strong id="qPrice" class="price"></strong><div class="cta"><button class="btn primary" id="qAdd">Agregar al carrito</button><button class="btn ghost" id="qFav" aria-pressed="false">Favorito</button></div><small class="muted">Demostración visual. Stock y condiciones a confirmar.</small></div></div>
+</div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
